@@ -6,12 +6,12 @@
 %define		kfname		pulseaudio-qt
 Summary:	pulseaudio Qt
 Name:		kf6-%{kfname}
-Version:	1.4.0
+Version:	1.5.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/pulseaudio-qt/%{kfname}-%{version}.tar.xz
-# Source0-md5:	741b7282572c5c013d1eb03dd9b7c701
+# Source0-md5:	9e8c7cc600937f0a21709f87a252c795
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= %{qtver}
@@ -74,7 +74,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libKF6PulseAudioQt.so.*.*
-%ghost %{_libdir}/libKF6PulseAudioQt.so.4
+%ghost %{_libdir}/libKF6PulseAudioQt.so.5
 
 %files devel
 %defattr(644,root,root,755)
